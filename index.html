@@ -438,9 +438,31 @@
   </div>
 </div>
 
-<script src="guests.js"></script>
+<!-- Background Music -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="Christina Perri - A Thousand Years (Piano %26 Cello Cover) - The Piano Guys - The Piano Guys (youtube).mp3" type="audio/mpeg">
+</audio>
+
+<!-- Mute toggle button -->
+<div id="musicBtn" onclick="toggleMusic()" style="position:fixed;bottom:20px;right:20px;z-index:200;width:42px;height:42px;background:#0a0a0a;border:1px solid #2a2a2a;border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer;transition:border-color 0.3s" onmouseover="this.style.borderColor='#c9a96e'" onmouseout="this.style.borderColor='#2a2a2a'">
+  <span id="musicIcon" style="font-size:16px">🔊</span>
+</div>
 <script>
-// ── TRANSLATIONS ──
+  // ── MUSIC ──
+  let muted = false;
+  function toggleMusic() {
+    const music = document.getElementById('bgMusic');
+    muted = !muted;
+    music.muted = muted;
+    document.getElementById('musicIcon').textContent = muted ? '🔇' : '🔊';
+  }
+
+  function startMusic() {
+    const music = document.getElementById('bgMusic');
+    music.volume = 0.35;
+    music.play().catch(() => {});
+    document.getElementById('musicBtn').style.display = 'flex';
+  }
 const T = {
   en: {
     hint: 'Tap to open',
@@ -626,7 +648,7 @@ function openEnvelope() {
         document.getElementById('scene').classList.add('hidden');
         document.getElementById('page').classList.add('visible');
         document.body.style.overflow = '';
-        startAnimations(); startCountdown(); spawnPetals();
+        startAnimations(); startCountdown(); spawnPetals(); startMusic();
       }, 1400);
     }, 500);
   }, 300);
