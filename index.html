@@ -281,12 +281,18 @@
       joyfully request the honour of your presence<br>at the celebration of their marriage
     </div>
 
+    <!-- Personalized guest name -->
+    <div id="guestGreeting" style="text-align:center;margin:0 0 10px;opacity:0;transform:translateY(15px);transition:opacity 1s ease 0.45s,transform 1s ease 0.45s">
+      <div style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#999;margin-bottom:6px" id="greetingLabel">Dear</div>
+      <div style="font-family:'Great Vibes',cursive;font-size:46px;background:linear-gradient(135deg,#c9a96e,#e8d4a8,#c9a96e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2" id="greetingName"></div>
+    </div>
+
     <div class="event-details" id="el6">
       <div class="event-date" id="evDate">August 24th, 2026</div>
-      <div class="event-day" id="evDay">Sunday</div>
+      <div class="event-day" id="evDay">Monday</div>
       <div class="event-venue" id="evVenue">Spencer's at the Waterfront</div>
       <div class="event-location" id="evLoc">Burlington, Ontario</div>
-      <div class="event-time" id="evTime">Reception to follow the ceremony</div>
+      <div class="event-time" id="evTime">Reception at 6:30 PM</div>
       <a class="map-btn" href="https://maps.google.com/?q=Spencer's+at+the+Waterfront+Burlington+Ontario" target="_blank">
         <span id="mapBtn">↗ View on Map</span>
       </a>
@@ -312,12 +318,12 @@
 
     <div class="detail-strip" id="el9">
       <div class="detail-item">
-        <div class="detail-icon">🕰</div>
-        <div class="detail-label" id="dl1">Ceremony</div>
-        <div class="detail-value">5:00 PM</div>
+        <div class="detail-icon">🥂</div>
+        <div class="detail-label" id="dl1">Reception</div>
+        <div class="detail-value" id="dv1">6:30 PM</div>
       </div>
       <div class="detail-item">
-        <div class="detail-icon">🥂</div>
+        <div class="detail-icon">🤵</div>
         <div class="detail-label" id="dl2">Dress Code</div>
         <div class="detail-value" id="dv2">Black Tie</div>
       </div>
@@ -400,9 +406,31 @@
       </div>
     </div>
 
-    <div class="footer-note" id="el11">
+    <div class="footer-note" id="el12" style="margin-top:40px">
+      <div class="ornament-line" style="margin-bottom:20px">
+        <span class="ornament-diamond">✦ &nbsp; &nbsp; ✦ &nbsp; &nbsp; ✦</span>
+      </div>
+      <div style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#999;margin-bottom:6px" id="hotelLabel">Recommended Stays</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#888;margin-bottom:24px" id="hotelSub">For guests travelling from afar</div>
+      <div style="display:flex;gap:1px;flex-wrap:wrap">
+        <div style="flex:1;min-width:220px;background:#0a0a0a;padding:28px 24px;text-align:center;position:relative">
+          <div style="font-size:22px;margin-bottom:10px">🏨</div>
+          <div style="font-family:'Great Vibes',cursive;font-size:28px;background:linear-gradient(135deg,#c9a96e,#e8d4a8,#c9a96e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px">The Pearle</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:#888;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px" id="hotelPearleTag">Hotel &amp; Spa · Burlington</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:#aaa;line-height:1.6;margin-bottom:14px" id="hotelPearleDesc">Luxury waterfront hotel steps from the venue — the closest and most elegant option.</div>
+          <a href="https://www.thepearleotel.com" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border:1px solid #c9a96e;color:#c9a96e;font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.3s" onmouseover="this.style.background='#c9a96e';this.style.color='#0a0a0a'" onmouseout="this.style.background='transparent';this.style.color='#c9a96e'" id="hotelPearleBtn">↗ View Hotel</a>
+        </div>
+        <div style="flex:1;min-width:220px;background:#0a0a0a;padding:28px 24px;text-align:center">
+          <div style="font-size:22px;margin-bottom:10px">🏨</div>
+          <div style="font-family:'Great Vibes',cursive;font-size:28px;background:linear-gradient(135deg,#c9a96e,#e8d4a8,#c9a96e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px">TownePlace Suites</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:#888;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px">by Marriott · Hamilton, ON</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:#aaa;line-height:1.6;margin-bottom:14px">Comfortable all-suite hotel with a relaxed feel — ideal for extended stays near the venue.</div>
+          <a href="https://www.marriott.com/en-us/hotels/yhmts-towneplace-suites-hamilton/overview/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border:1px solid #c9a96e;color:#c9a96e;font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.3s" onmouseover="this.style.background='#c9a96e';this.style.color='#0a0a0a'" onmouseout="this.style.background='transparent';this.style.color='#c9a96e'">↗ View Hotel</a>
+        </div>
+      </div>
+    </div>
       <div class="gold-divider"></div>
-      <div class="footer-text" id="footerQuote">"I carry your heart with me — I carry it in my heart."<br><small style="font-size:13px;color:#bbb">— e.e. cummings</small></div>
+      <div class="footer-text" id="footerQuote" style="text-align:center">"United in love, walking towards forever."</div>
       <div class="footer-names" id="footerNames">Aboud ♥ Maram</div>
       <div class="footer-bottom" id="footerBottom">August 24th · Spencer's · Burlington, Ontario</div>
     </div>
@@ -421,14 +449,14 @@ const T = {
     inviteHeader: 'Together with their families',
     nameAboud: 'Aboud', nameAnd: 'and', nameMaram: 'Maram',
     inviteBody: 'joyfully request the honour of your presence<br>at the celebration of their marriage',
-    evDate: 'August 24th, 2026', evDay: 'Sunday',
+    evDate: 'August 24th, 2026', evDay: 'Monday',
     evVenue: "Spencer's at the Waterfront",
     evLoc: 'Burlington, Ontario',
-    evTime: 'Reception to follow the ceremony',
+    evTime: 'Reception at 6:30 PM',
     mapBtn: '↗ View on Map',
     cdLabel: 'Counting down the days',
     cdDays: 'Days', cdHours: 'Hours', cdMins: 'Mins', cdSecs: 'Secs',
-    dl1: 'Ceremony', dl2: 'Dress Code', dv2: 'Black Tie', dl3: 'Colour Theme', dv3: 'Black &amp; Gold',
+    dl1: 'Reception', dv1: '6:30 PM', dl2: 'Dress Code', dv2: 'Black Tie', dl3: 'Colour Theme', dv3: 'Black &amp; Gold',
     rsvpTitle: 'RSVP',
     rsvpSub: 'Kindly reply by July 1st, 2026',
     'lbl-fname': 'First Name', 'lbl-lname': 'Last Name',
@@ -442,7 +470,7 @@ const T = {
     dietOpts: ['No restrictions','Vegetarian','Vegan','Halal','Gluten-free','Other (see notes)'],
     'inp-fname': 'Your name', 'inp-lname': 'Family name',
     'inp-msg': 'Share your warmest wishes…',
-    footerQuote: '"I carry your heart with me — I carry it in my heart."<br><small style="font-size:13px;color:#bbb">— e.e. cummings</small>',
+    footerQuote: '"United in love, walking towards forever."',
     footerNames: 'Aboud ♥ Maram',
     footerBottom: "August 24th · Spencer's · Burlington, Ontario",
     successYes: (n) => `Thank you, ${n}! We can't wait to celebrate with you. ✦`,
@@ -458,14 +486,14 @@ const T = {
     inviteHeader: 'مع عائلتيهما الكريمتين',
     nameAboud: 'عبود', nameAnd: 'و', nameMaram: 'مرام',
     inviteBody: 'يسعدانكم بدعوتكم لمشاركتهما<br>فرحة حفل زفافهما',
-    evDate: '٢٤ أغسطس ٢٠٢٥', evDay: 'الأحد',
+    evDate: '٢٤ أغسطس ٢٠٢٦', evDay: 'الاثنين',
     evVenue: 'قاعة سبنسرز على الواجهة البحرية',
     evLoc: 'بورلينغتون، أونتاريو',
-    evTime: 'يعقب الحفل استقبال الضيوف',
+    evTime: 'حفل الاستقبال الساعة ٦:٣٠ مساءً',
     mapBtn: '↗ عرض على الخريطة',
     cdLabel: 'العد التنازلي للفرح',
     cdDays: 'أيام', cdHours: 'ساعات', cdMins: 'دقائق', cdSecs: 'ثواني',
-    dl1: 'حفل الزفاف', dl2: 'كود اللباس', dv2: 'رسمي أسود', dl3: 'ألوان الحفل', dv3: 'أسود وذهبي',
+    dl1: 'الاستقبال', dv1: '٦:٣٠ م', dl2: 'كود اللباس', dv2: 'رسمي أسود', dl3: 'ألوان الحفل', dv3: 'أسود وذهبي',
     rsvpTitle: 'تأكيد الحضور',
     rsvpSub: 'يُرجى الرد بحلول ١ يوليو ٢٠٢٦',
     'lbl-fname': 'الاسم الأول', 'lbl-lname': 'اسم العائلة',
@@ -479,7 +507,7 @@ const T = {
     dietOpts: ['لا قيود','نباتي','نباتي صرف','حلال','خالٍ من الغلوتين','أخرى (في الملاحظات)'],
     'inp-fname': 'اسمك', 'inp-lname': 'اسم العائلة',
     'inp-msg': 'شاركونا أجمل تهانيكم…',
-    footerQuote: '"أحمل قلبك معي — أحمله في قلبي"<br><small style="font-size:13px;color:#bbb">— إي إي كامينغز</small>',
+    footerQuote: '"متحدان بالحب، نسير نحو الأبد."',
     footerNames: 'عبود ♥ مرام',
     footerBottom: '٢٤ أغسطس · سبنسرز · بورلينغتون، أونتاريو',
     successYes: (n) => `شكراً لك، ${n}! لا يسعنا الانتظار للاحتفال معكم ✦`,
@@ -503,7 +531,7 @@ function setLang(lang) {
   // Simple innerHTML swaps
   const simple = ['hint','card-invited','card-name','card-date','inviteHeader','nameAboud','nameAnd',
     'nameMaram','inviteBody','evDate','evDay','evVenue','evLoc','evTime','mapBtn','cdLabel',
-    'cdDays','cdHours','cdMins','cdSecs','dl1','dl2','dv2','dl3','dv3','rsvpTitle','rsvpSub',
+    'cdDays','cdHours','cdMins','cdSecs','dl1','dv1','dl2','dv2','dl3','dv3','rsvpTitle','rsvpSub',
     'lbl-fname','lbl-lname','lbl-email','lbl-phone','lbl-attend','btnYes','btnNo',
     'lbl-guests','lbl-diet','lbl-msg','submitBtn','footerQuote','footerNames','footerBottom'];
 
@@ -514,7 +542,7 @@ function setLang(lang) {
     'evDate': 'evDate', 'evDay': 'evDay', 'evVenue': 'evVenue', 'evLoc': 'evLoc',
     'evTime': 'evTime', 'mapBtn': 'mapBtn', 'cdLabel': 'cdLabel',
     'cdDays': 'cdDays', 'cdHours': 'cdHours', 'cdMins': 'cdMins', 'cdSecs': 'cdSecs',
-    'dl1': 'dl1', 'dl2': 'dl2', 'dv2': 'dv2', 'dl3': 'dl3', 'dv3': 'dv3',
+    'dl1': 'dl1', 'dv1': 'dv1', 'dl2': 'dl2', 'dv2': 'dv2', 'dl3': 'dl3', 'dv3': 'dv3',
     'rsvpTitle': 'rsvpTitle', 'rsvpSub': 'rsvpSub',
     'lbl-fname': 'lbl-fname', 'lbl-lname': 'lbl-lname',
     'lbl-email': 'lbl-email', 'lbl-phone': 'lbl-phone',
@@ -551,6 +579,10 @@ function setLang(lang) {
 
   // Seal
   document.querySelector('.seal-letter').textContent = t.sealText;
+
+  // Greeting label
+  const gl = document.getElementById('greetingLabel');
+  if (gl) gl.textContent = lang === 'ar' ? 'العزيز' : 'Dear';
 
   // Card name font
   const cn = document.getElementById('card-name');
@@ -597,7 +629,21 @@ function openEnvelope() {
 }
 
 function startAnimations() {
-  ['el0','el1','el2','el3','el4','el5','el6','el7','el8','el9','el10','el11'].forEach((id,i) => {
+  // Read ?guest= URL parameter
+  const params = new URLSearchParams(window.location.search);
+  const guestName = params.get('guest');
+  if (guestName) {
+    const decoded = decodeURIComponent(guestName.replace(/\+/g, ' '));
+    document.getElementById('greetingName').textContent = decoded;
+    document.getElementById('guestGreeting').style.display = 'block';
+    // Also pre-fill RSVP first name if it's a single name
+    const parts = decoded.split(' ');
+    if (parts.length === 1) document.getElementById('inp-fname').value = decoded;
+  } else {
+    document.getElementById('guestGreeting').style.display = 'none';
+  }
+
+  ['el0','el1','el2','el3','el4','el5','guestGreeting','el6','el7','el8','el9','el10','el12','el11'].forEach((id,i) => {
     setTimeout(() => { const el = document.getElementById(id); if(el) el.classList.add('appear'); }, i*120);
   });
 }
