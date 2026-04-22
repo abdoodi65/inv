@@ -282,9 +282,9 @@
     </div>
 
     <!-- Personalized guest name -->
-    <div id="guestGreeting" style="text-align:center;margin:0 0 10px;opacity:0;transform:translateY(15px);transition:opacity 1s ease 0.45s,transform 1s ease 0.45s">
+    <div id="guestGreeting" style="text-align:center;margin:0 0 10px;display:none">
       <div style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#999;margin-bottom:6px" id="greetingLabel">Dear</div>
-      <div style="font-family:'Great Vibes',cursive;font-size:46px;background:linear-gradient(135deg,#c9a96e,#e8d4a8,#c9a96e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2" id="greetingName">Esam &amp; Jathwa</div>
+      <div style="font-family:'Great Vibes',cursive;font-size:46px;color:#c9a96e;line-height:1.2" id="greetingName">Esam &amp; Jathwa</div>
     </div>
 
     <div class="event-details" id="el6">
@@ -634,13 +634,18 @@ function startAnimations() {
   const guestName = params.get('guest');
   if (guestName) {
     const decoded = decodeURIComponent(guestName.replace(/\+/g, ' '));
-    document.getElementById('greetingName').innerHTML = decoded;
+    document.getElementById('greetingName').textContent = decoded;
+    const g = document.getElementById('guestGreeting');
+    g.style.display = 'block';
+    g.style.opacity = '0';
+    g.style.transform = 'translateY(15px)';
+    g.style.transition = 'opacity 1s ease, transform 1s ease';
+    setTimeout(() => { g.style.opacity = '1'; g.style.transform = 'translateY(0)'; }, 200);
     const parts = decoded.split(' ');
     if (parts.length === 1) document.getElementById('inp-fname').value = decoded;
   }
-  document.getElementById('guestGreeting').style.display = 'block';
 
-  ['el0','el1','el2','el3','el4','el5','guestGreeting','el6','el7','el8','el9','el10','el12','el11'].forEach((id,i) => {
+  ['el0','el1','el2','el3','el4','el5','el6','el7','el8','el9','el10','el12','el11'].forEach((id,i) => {
     setTimeout(() => { const el = document.getElementById(id); if(el) el.classList.add('appear'); }, i*120);
   });
 }
