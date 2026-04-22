@@ -438,6 +438,7 @@
   </div>
 </div>
 
+<script src="guests.js"></script>
 <script>
 // ── TRANSLATIONS ──
 const T = {
@@ -629,20 +630,18 @@ function openEnvelope() {
 }
 
 function startAnimations() {
-  // Read ?guest= URL parameter
+  // Look up guest name from guests.js using ?guest= key
   const params = new URLSearchParams(window.location.search);
-  const guestName = params.get('guest');
+  const key = (params.get('guest') || '').toLowerCase().trim();
+  const guestName = (typeof GUESTS !== 'undefined' && GUESTS[key]) ? GUESTS[key] : null;
   if (guestName) {
-    const decoded = decodeURIComponent(guestName.replace(/\+/g, ' '));
-    document.getElementById('greetingName').textContent = decoded;
+    document.getElementById('greetingName').textContent = guestName;
     const g = document.getElementById('guestGreeting');
     g.style.display = 'block';
     g.style.opacity = '0';
     g.style.transform = 'translateY(15px)';
     g.style.transition = 'opacity 1s ease, transform 1s ease';
     setTimeout(() => { g.style.opacity = '1'; g.style.transform = 'translateY(0)'; }, 200);
-    const parts = decoded.split(' ');
-    if (parts.length === 1) document.getElementById('inp-fname').value = decoded;
   }
 
   ['el0','el1','el2','el3','el4','el5','el6','el7','el8','el9','el10','el12','el11'].forEach((id,i) => {
