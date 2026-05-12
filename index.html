@@ -204,6 +204,30 @@
 
   .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
   @media(max-width:500px) { .form-row { grid-template-columns:1fr; } }
+
+  @media(max-width:600px) {
+    .monogram { font-size:52px; letter-spacing:8px; }
+    .name-main { font-size:32px; }
+    .name-and { font-size:14px; letter-spacing:2px; margin:0 6px; }
+    .event-date { font-size:24px; }
+    .event-details { padding:30px 20px; }
+    .event-venue { font-size:17px; }
+    .detail-strip { flex-direction:row; }
+    .detail-item { padding:14px 8px; }
+    .detail-value { font-size:13px; }
+    .detail-label { font-size:8px; }
+    .rsvp-title { font-size:38px; }
+    .rsvp-form { padding:24px 16px; }
+    .page-content { padding:40px 16px 60px; }
+    .footer-names { font-size:30px; }
+    .countdown { gap:4px; }
+    .cd-block { min-width:50px; padding:10px 6px; }
+    .cd-num { font-size:28px; }
+    #envelope-wrap { width:280px; height:200px; }
+    #invite-card { width:240px; }
+    .hotel-cards { flex-direction:column; }
+    .invite-body { font-size:17px; }
+  }
   .form-group { display:flex; flex-direction:column; gap:6px; }
   .form-group.full { grid-column:1/-1; }
   .form-label { font-family:'Montserrat',sans-serif; font-size:9px; letter-spacing:3px; text-transform:uppercase; color:var(--gold); }
@@ -263,7 +287,7 @@
   <div id="invite-card">
     <div id="invite-card-inner">
       <div id="card-invited" style="font-size:11px;letter-spacing:3px;text-transform:uppercase;font-family:'Montserrat',sans-serif;color:#888;margin-bottom:8px">You are invited</div>
-      <div id="card-name" style="font-family:'Great Vibes',cursive;font-size:34px;color:#0a0a0a;line-height:1.2">Aboud &amp; Maram</div>
+      <div id="card-name" style="font-family:'Cattalague',cursive;font-size:28px;color:#0a0a0a;line-height:1.8;overflow:visible;padding:4px 0">Aboud &amp; Maram</div>
       <div id="card-date" style="font-family:'Cormorant Garamond',serif;font-size:14px;color:#666;margin-top:6px">August 24th · Burlington</div>
     </div>
   </div>
@@ -636,7 +660,7 @@ function setLang(lang) {
 
   // Card name font
   const cn = document.getElementById('card-name');
-  cn.style.fontFamily = lang === 'ar' ? "'Scheherazade New', serif" : "'Great Vibes', cursive";
+  cn.style.fontFamily = lang === 'ar' ? "'Scheherazade New', serif" : "'Cattalague', cursive";
 
   // RSVP title font
   const rt = document.getElementById('rsvpTitle');
