@@ -1,11 +1,12 @@
 // ── WEDDING GUEST LIST ──
-// key: what goes in the URL (?guest=KEY)
+// key:  what goes in the URL (?guest=KEY)
 // name: displayed on the invite
+// lang: "ar" opens in Arabic first, "en" opens in English first
 // options: dropdown choices for RSVP guest count
 
 const GUESTS = {
   "rinad": {
-    name: "Jaffar & Rinad",
+    name: "Jaffar & Rinad", lang: "en",
     options: [
       { value: "Jaffar & Rinad (2)", label: "Both of us" },
       { value: "Jaffar only (1)",    label: "Jaffar only" },
@@ -13,7 +14,7 @@ const GUESTS = {
     ]
   },
   "rawand": {
-    name: "Adam & Rawand",
+    name: "Adam & Rawand", lang: "en",
     options: [
       { value: "Adam & Rawand (2)", label: "Both of us" },
       { value: "Adam only (1)",     label: "Adam only" },
@@ -21,7 +22,7 @@ const GUESTS = {
     ]
   },
   "rana-riad": {
-    name: "Riad & Rana",
+    name: "Riad & Rana", lang: "en",
     options: [
       { value: "Riad & Rana (2)", label: "Both of us" },
       { value: "Riad only (1)",   label: "Riad only" },
@@ -29,7 +30,7 @@ const GUESTS = {
     ]
   },
   "zee": {
-    name: "Mohammed, Zainab & Rana",
+    name: "Mohammed, Zainab & Rana", lang: "en",
     options: [
       { value: "Mohammed, Zainab & Rana (3)", label: "All three of us" },
       { value: "Mohammed & Zainab (2)",       label: "Mohammed & Zainab" },
@@ -37,25 +38,25 @@ const GUESTS = {
     ]
   },
   "rana": {
-    name: "Rana",
+    name: "Rana", lang: "en",
     options: [
       { value: "Rana (1)", label: "Just me" }
     ]
   },
   "dima": {
-    name: "Dima",
+    name: "Dima", lang: "en",
     options: [
       { value: "Dima (1)", label: "Just me" }
     ]
   },
   "noor": {
-    name: "Noor",
+    name: "Noor", lang: "en",
     options: [
       { value: "Noor (1)", label: "Just me" }
     ]
   },
   "ravin": {
-    name: "Ravin & Ravin's Mom",
+    name: "Ravin & Ravin's Mom", lang: "en",
     options: [
       { value: "Ravin & Mom (2)", label: "Both of us" },
       { value: "Ravin only (1)",  label: "Ravin only" },
@@ -63,7 +64,7 @@ const GUESTS = {
     ]
   },
   "mace": {
-    name: "Mace & Ibrahim",
+    name: "Mace & Ibrahim", lang: "en",
     options: [
       { value: "Mace & Ibrahim (2)", label: "Both of us" },
       { value: "Mace only (1)",      label: "Mace only" },
@@ -71,7 +72,7 @@ const GUESTS = {
     ]
   },
   "toma": {
-    name: "Toma & Saif",
+    name: "Toma & Saif", lang: "en",
     options: [
       { value: "Toma & Saif (2)", label: "Both of us" },
       { value: "Toma only (1)",   label: "Toma only" },
@@ -79,7 +80,7 @@ const GUESTS = {
     ]
   },
   "humam": {
-    name: "Humam & Baji",
+    name: "Humam & Baji", lang: "en",
     options: [
       { value: "Humam & Baji (2)", label: "Both of us" },
       { value: "Humam only (1)",   label: "Humam only" },
@@ -87,13 +88,13 @@ const GUESTS = {
     ]
   },
   "shemo": {
-    name: "Shemo",
+    name: "Shemo", lang: "en",
     options: [
       { value: "Shemo (1)", label: "Just me" }
     ]
   },
   "roaa": {
-    name: "Roaa & Husband",
+    name: "Roaa & Husband", lang: "en",
     options: [
       { value: "Roaa & Husband (2)", label: "Both of us" },
       { value: "Roaa only (1)",      label: "Roaa only" },
@@ -101,13 +102,13 @@ const GUESTS = {
     ]
   },
   "merwa": {
-    name: "Merwa",
+    name: "Merwa", lang: "en",
     options: [
       { value: "Merwa (1)", label: "Just me" }
     ]
   },
   "iptisam": {
-    name: "Iptisam, Haneen & Aya",
+    name: "Iptisam, Haneen & Aya", lang: "en",
     options: [
       { value: "Iptisam, Haneen & Aya (3)", label: "All three of us" },
       { value: "Iptisam & Haneen (2)",      label: "Iptisam & Haneen" },
@@ -116,13 +117,13 @@ const GUESTS = {
     ]
   },
   "abooddad": {
-    name: "Muwafaq Al-Fahdli",
+    name: "Muwafaq Al-Fahdli", lang: "ar",
     options: [
       { value: "Muwafaq Al-Fahdli (1)", label: "Just me" }
     ]
   },
   "aboodmom": {
-    name: "Esam & Jawthwa",
+    name: "Esam & Jawthwa", lang: "en",
     options: [
       { value: "Esam & Jawthwa (2)", label: "Both of us" },
       { value: "Esam only (1)",      label: "Esam only" },
@@ -130,19 +131,19 @@ const GUESTS = {
     ]
   },
   "tutu": {
-    name: "Shoula Alhalafi",
+    name: "Shoula Alhalafi", lang: "ar",
     options: [
       { value: "Shoula Alhalafi (1)", label: "Just me" }
     ]
   },
   "abdullah": {
-    name: "Abdullah Yahya",
+    name: "Abdullah Yahya", lang: "en",
     options: [
       { value: "Abdullah Yahya (1)", label: "Just me" }
     ]
   },
   "marwa-ammar": {
-    name: "Ammar, Marwa, Anmar & Tina",
+    name: "Ammar, Marwa, Anmar & Tina", lang: "en",
     options: [
       { value: "Ammar, Marwa, Anmar & Tina (4)", label: "All four of us" },
       { value: "Ammar & Marwa (2)",              label: "Ammar & Marwa only" },
@@ -150,7 +151,7 @@ const GUESTS = {
     ]
   },
   "saif-zainab": {
-    name: "Saif & Zainab",
+    name: "Saif & Zainab", lang: "en",
     options: [
       { value: "Saif, Zainab & guest (3)", label: "All three of us" },
       { value: "Saif & Zainab (2)",        label: "Just the two of us" },
@@ -159,7 +160,7 @@ const GUESTS = {
     ]
   },
   "nuha": {
-    name: "Faris & Nuha",
+    name: "Faris & Nuha", lang: "en",
     options: [
       { value: "Faris & Nuha (2)", label: "Both of us" },
       { value: "Faris only (1)",   label: "Faris only" },
@@ -167,7 +168,7 @@ const GUESTS = {
     ]
   },
   "sinan": {
-    name: "Sinan & Marwa",
+    name: "Sinan & Marwa", lang: "en",
     options: [
       { value: "Sinan, Marwa & 2 kids (4)", label: "All of us (4)" },
       { value: "Sinan & Marwa (2)",         label: "Sinan & Marwa only" },
@@ -175,19 +176,19 @@ const GUESTS = {
     ]
   },
   "yousif": {
-    name: "Yousif Maeen",
+    name: "Yousif Maeen", lang: "en",
     options: [
       { value: "Yousif Maeen (1)", label: "Just me" }
     ]
   },
   "mayar": {
-    name: "Mayar Elkazzaz",
+    name: "Mayar Elkazzaz", lang: "en",
     options: [
       { value: "Mayar Elkazzaz (1)", label: "Just me" }
     ]
   },
   "fahad": {
-    name: "Fahad & Laith Aziza",
+    name: "Fahad & Laith Aziza", lang: "en",
     options: [
       { value: "Fahad & Laith (2)", label: "Both of us" },
       { value: "Fahad only (1)",    label: "Fahad only" },
@@ -195,37 +196,37 @@ const GUESTS = {
     ]
   },
   "jabar": {
-    name: "Abduljabar Mohamad",
+    name: "Abdul Jabar Mohamed", lang: "en",
     options: [
-      { value: "Abduljabar Mohamad (1)", label: "Just me" }
+      { value: "Abdul Jabar Mohamed (1)", label: "Just me" }
     ]
   },
   "anthony": {
-    name: "Anthony Abdul Ahad",
+    name: "Anthony Abdul Ahad", lang: "en",
     options: [
       { value: "Anthony Abdul Ahad (1)", label: "Just me" }
     ]
   },
   "basem": {
-    name: "Basem Yassa",
+    name: "Basem Yassa", lang: "en",
     options: [
       { value: "Basem Yassa (1)", label: "Just me" }
     ]
   },
   "layan": {
-    name: "Layan Bashi",
+    name: "Layan Bashi", lang: "en",
     options: [
       { value: "Layan Bashi (1)", label: "Just me" }
     ]
   },
   "nada": {
-    name: "Nada",
+    name: "Nada", lang: "en",
     options: [
       { value: "Nada (1)", label: "Just me" }
     ]
   },
   "shakir": {
-    name: "Shakir & Wife",
+    name: "Shakir & Wife", lang: "en",
     options: [
       { value: "Shakir & Wife (2)", label: "Both of us" },
       { value: "Shakir only (1)",   label: "Shakir only" },
@@ -233,61 +234,61 @@ const GUESTS = {
     ]
   },
   "jaffarfriend": {
-    name: "Jaffar's Friend",
+    name: "Jaffar's Friend", lang: "en",
     options: [
       { value: "Jaffar's Friend (1)", label: "Just me" }
     ]
   },
   "narmin": {
-    name: "Narmin",
+    name: "Narmin", lang: "en",
     options: [
       { value: "Narmin (1)", label: "Just me" }
     ]
   },
   "haydar": {
-    name: "Haydar",
+    name: "Haydar", lang: "en",
     options: [
       { value: "Haydar (1)", label: "Just me" }
     ]
   },
   "maysa": {
-    name: "Maysa",
+    name: "Maysa", lang: "en",
     options: [
       { value: "Maysa (1)", label: "Just me" }
     ]
   },
   "meso": {
-    name: "Meso",
+    name: "Meso", lang: "en",
     options: [
       { value: "Meso (1)", label: "Just me" }
     ]
   },
   "dumar": {
-    name: "Dumar",
+    name: "Dumar", lang: "en",
     options: [
       { value: "Dumar (1)", label: "Just me" }
     ]
   },
   "wassan": {
-    name: "Wassan",
+    name: "Wassan", lang: "en",
     options: [
       { value: "Wassan (1)", label: "Just me" }
     ]
   },
   "jaffarfarman": {
-    name: "Jaffar Farman",
+    name: "Jaffar Farman", lang: "en",
     options: [
       { value: "Jaffar Farman (1)", label: "Just me" }
     ]
   },
   "waseem": {
-    name: "Waseem Hasan",
+    name: "Waseem Hasan", lang: "en",
     options: [
       { value: "Waseem Hasan (1)", label: "Just me" }
     ]
   },
   "nabil": {
-    name: "Nabil & Sarwa",
+    name: "Nabil & Sarwa", lang: "ar",
     options: [
       { value: "Nabil & Sarwa (2)", label: "Both of us" },
       { value: "Nabil only (1)",    label: "Nabil only" },
