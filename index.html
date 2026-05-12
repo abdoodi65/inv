@@ -131,7 +131,7 @@
   #page.visible { opacity:1; }
   #page::before { content:''; position:fixed; inset:0; background-image:radial-gradient(ellipse at 20% 20%,rgba(201,169,110,0.06) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(201,169,110,0.04) 0%,transparent 60%); pointer-events:none; z-index:0; }
 
-  .page-content { position:relative; z-index:1; max-width:700px; margin:0 auto; padding:60px 30px 80px; overflow:visible; }
+  .page-content { position:relative; z-index:1; max-width:700px; margin:0 auto; padding:280px 30px 80px; overflow:visible; }
 
   .ornament-line { display:flex; align-items:center; gap:16px; margin-bottom:8px; }
   .ornament-line::before, .ornament-line::after { content:''; flex:1; height:1px; background:linear-gradient(to right,transparent,var(--gold),transparent); }
@@ -219,7 +219,7 @@
     .detail-label { font-size:8px; }
     .rsvp-title { font-size:38px; }
     .rsvp-form { padding:24px 16px; }
-    .page-content { padding:40px 16px 60px; }
+    .page-content { padding:180px 16px 60px; }
     .footer-names { font-size:30px; }
     .countdown { gap:4px; }
     .cd-block { min-width:50px; padding:10px 6px; }
@@ -260,9 +260,28 @@
 
   .petal { position:fixed; top:-20px; font-size:14px; opacity:0; animation:fall linear infinite; pointer-events:none; z-index:0; }
   @keyframes fall { 0%{transform:translateY(0) rotate(0deg);opacity:0.8} 100%{transform:translateY(110vh) rotate(360deg);opacity:0} }
+
+    #videoOverlay.show { display: flex; }
+  #videoOverlay.visible { opacity: 1; }
+  #videoOverlay.fade-out { opacity: 0; }
+
+  /* ── BACKGROUND IMAGE ── */
+  #page::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url('https://amweddinginv.github.io/inv/couple.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+  }
 </style>
 </head>
 <body>
+
 
 <div id="lang-toggle">
   <button class="lang-btn active" onclick="setLang('en')">EN</button>
@@ -702,13 +721,16 @@ function openEnvelope() {
   }, 300);
 }
 
+
 function startAnimations() {
   const params = new URLSearchParams(window.location.search);
   const key = (params.get('guest') || '').toLowerCase().trim();
   const guest = (typeof GUESTS !== 'undefined' && GUESTS[key]) ? GUESTS[key] : null;
 
+  // Set language from guest preference before anything renders
+  if (guest && guest.lang) setLang(guest.lang);
+
   if (guest) {
-    // Show personalized greeting
     document.getElementById('greetingName').textContent = guest.name;
     const g = document.getElementById('guestGreeting');
     g.style.display = 'block';
@@ -717,7 +739,6 @@ function startAnimations() {
     g.style.transition = 'opacity 1s ease, transform 1s ease';
     setTimeout(() => { g.style.opacity = '1'; g.style.transform = 'translateY(0)'; }, 200);
 
-    // Populate guest dropdown with their specific options
     const sel = document.getElementById('sel-guests');
     sel.innerHTML = '';
     guest.options.forEach(opt => {
