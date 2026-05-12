@@ -767,22 +767,24 @@ function openEnvelope() {
     const video = document.getElementById('danceVideo');
     // First hide the envelope scene
     document.getElementById('scene').classList.add('hidden');
+    // Start music immediately
+    startMusic();
     // Show overlay
     overlay.style.display = 'flex';
     video.currentTime = 0;
     video.play().catch(() => {});
     // Fade in overlay
     requestAnimationFrame(() => requestAnimationFrame(() => overlay.style.opacity = '1'));
-    // After 8 seconds fade out and show invite
+    // After 4 seconds fade out and show invite
     setTimeout(() => {
       overlay.style.opacity = '0';
       setTimeout(() => {
         overlay.style.display = 'none';
         document.getElementById('page').classList.add('visible');
         document.body.style.overflow = '';
-        startAnimations(); startCountdown(); spawnPetals(); startMusic();
+        startAnimations(); startCountdown(); spawnPetals();
       }, 800);
-    }, 8000);
+    }, 4000);
   }
 
 function startAnimations() {
