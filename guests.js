@@ -166,6 +166,7 @@ const GUESTS = {
   "saif-zainab": {
     name: "Saif & Zainab", lang: "en",
     options: [
+      { value: "Saif & Zainab + 1 guest (3)", label: "Both of us + 1 guest" },
       { value: "Saif & Zainab (2)", label: "Both of us" },
       { value: "Saif only (1)", label: "Saif only" },
       { value: "Zainab only (1)", label: "Zainab only" }
@@ -182,6 +183,8 @@ const GUESTS = {
   "sinan": {
     name: "Sinan & Marwa", lang: "en",
     options: [
+      { value: "Sinan & Marwa + 2 guests (4)", label: "Both of us + 2 guests" },
+      { value: "Sinan & Marwa + 1 guest (3)",  label: "Both of us + 1 guest" },
       { value: "Sinan & Marwa (2)", label: "Both of us" },
       { value: "Sinan only (1)", label: "Sinan only" },
       { value: "Marwa only (1)", label: "Marwa only" }
