@@ -150,17 +150,17 @@ const GUESTS = {
     ]
   },
   "marwa-ammar": {
-    name: "Ammar & Marwa & Anmar & Teena", lang: "en",
+    name: "Ammar & Marwa & Anmar & Tina", lang: "en",
     options: [
-      { value: "Ammar, Marwa, Anmar & Teena (4)", label: "All four of us" },
-      { value: "Marwa, Anmar & Teena (3)", label: "Without Ammar" },
-      { value: "Ammar, Anmar & Teena (3)", label: "Without Marwa" },
-      { value: "Ammar, Marwa & Teena (3)", label: "Without Anmar" },
-      { value: "Ammar, Marwa & Anmar (3)", label: "Without Teena" },
+      { value: "Ammar, Marwa, Anmar & Tina (4)", label: "All four of us" },
+      { value: "Marwa, Anmar & Tina (3)", label: "Without Ammar" },
+      { value: "Ammar, Anmar & Tina (3)", label: "Without Marwa" },
+      { value: "Ammar, Marwa & Tina (3)", label: "Without Anmar" },
+      { value: "Ammar, Marwa & Anmar (3)", label: "Without Tina" },
       { value: "Ammar only (1)", label: "Ammar only" },
       { value: "Marwa only (1)", label: "Marwa only" },
       { value: "Anmar only (1)", label: "Anmar only" },
-      { value: "Teena only (1)", label: "Teena only" }
+      { value: "Tina only (1)", label: "Tina only" }
     ]
   },
   "saif-zainab": {
@@ -341,6 +341,28 @@ const GUESTS = {
       { value: "Omar & Slavice (2)", label: "Both of us" },
       { value: "Omar only (1)", label: "Omar only" },
       { value: "Slavice only (1)", label: "Slavice only" }
+    ]
+  },
+  "salam": {
+    name: "Salam & Fadwa", lang: "ar",
+    options: [
+      { value: "Salam & Fadwa (2)", label: "Both of us" },
+      { value: "Salam only (1)", label: "Salam only" },
+      { value: "Fadwa only (1)", label: "Fadwa only" }
+    ]
+  },
+  "souad": {
+    name: "Souad, Sameer, Ahmed & Hisham", lang: "ar",
+    options: [
+      { value: "Souad, Sameer, Ahmed & Hisham (4)", label: "All four of us" },
+      { value: "Sameer, Ahmed & Hisham (3)", label: "Without Souad" },
+      { value: "Souad, Ahmed & Hisham (3)", label: "Without Sameer" },
+      { value: "Souad, Sameer & Hisham (3)", label: "Without Ahmed" },
+      { value: "Souad, Sameer & Ahmed (3)", label: "Without Hisham" },
+      { value: "Souad only (1)", label: "Souad only" },
+      { value: "Sameer only (1)", label: "Sameer only" },
+      { value: "Ahmed only (1)", label: "Ahmed only" },
+      { value: "Hisham only (1)", label: "Hisham only" }
     ]
   },
   "nabil": {
