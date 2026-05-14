@@ -130,11 +130,11 @@ const GUESTS = {
     ]
   },
   "aboodmom": {
-    name: "Esam & Jawthwa", lang: "en",
+    name: "Esam & Jathwa", lang: "en",
     options: [
-      { value: "Esam & Jawthwa (2)", label: "Both of us" },
+      { value: "Esam & Jathwa (2)", label: "Both of us" },
       { value: "Esam only (1)", label: "Esam only" },
-      { value: "Jawthwa only (1)", label: "Jawthwa only" }
+      { value: "Jathwa only (1)", label: "Jathwa only" }
     ]
   },
   "tutu": {
