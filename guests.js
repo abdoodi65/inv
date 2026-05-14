@@ -241,11 +241,11 @@ const GUESTS = {
     ]
   },
   "shakir": {
-    name: "Shakir, Shakir's Wife", lang: "en",
+    name: "Shakir & Azhar", lang: "en",
     options: [
-      { value: "Shakir & Shakir's Wife (2)", label: "Both of us" },
+      { value: "Shakir & Azhar (2)", label: "Both of us" },
       { value: "Shakir only (1)", label: "Shakir only" },
-      { value: "Shakir's Wife only (1)", label: "Shakir's Wife only" }
+      { value: "Azhar only (1)", label: "Azhar only" }
     ]
   },
   "jaffarfriend": {
@@ -297,11 +297,11 @@ const GUESTS = {
     ]
   },
   "mustafa": {
-    name: "Mustafa & Nadeen", lang: "en",
+    name: "Mustafa & Nadine", lang: "en",
     options: [
-      { value: "Mustafa & Nadeen (2)", label: "Both of us" },
+      { value: "Mustafa & Nadine (2)", label: "Both of us" },
       { value: "Mustafa only (1)", label: "Mustafa only" },
-      { value: "Nadeen only (1)", label: "Nadeen only" }
+      { value: "Nadine only (1)", label: "Nadine only" }
     ]
   },
   "mackenzie": {
@@ -371,6 +371,18 @@ const GUESTS = {
       { value: "Nabil & Sarwa (2)", label: "Both of us" },
       { value: "Nabil only (1)", label: "Nabil only" },
       { value: "Sarwa only (1)", label: "Sarwa only" }
+    ]
+  },
+  "suham": {
+    name: "Suham Al Shaikhly", lang: "en",
+    options: [
+      { value: "Suham Al Shaikhly (1)", label: "Just me" }
+    ]
+  },
+  "yassir": {
+    name: "Yassir Alkhayat", lang: "en",
+    options: [
+      { value: "Yassir Alkhayat (1)", label: "Just me" }
     ]
   }
 };
