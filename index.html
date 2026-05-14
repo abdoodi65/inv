@@ -278,10 +278,7 @@
   .footer-note { text-align:center; margin-top:60px; opacity:0; transition:opacity 1s ease 0.9s; padding:0 20px; }
   .footer-note.appear { opacity:1; }
   .footer-text { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:16px; color:#999; line-height:1.8; }
-  .footer-names { font-family:'Cattalague',cursive; font-size:42px; color:var(--gold); margin-top:10px; line-height:1.2; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:0.2em 0.35em; text-align:center; overflow:visible; }
-  .footer-names .fn-name { display:inline-block; }
-  .footer-names .fn-heart { display:inline-block; flex:0 0 100%; line-height:1; font-size:0.6em; vertical-align:middle; }
-  @media(min-width:520px) { .footer-names .fn-heart { flex:0 0 auto; } }
+  .footer-names { font-family:'Cattalague',cursive; font-size:42px; color:var(--gold); margin-top:10px; line-height:1.8; display:block; text-align:center; overflow:visible; }
   .footer-bottom { font-family:'Montserrat',sans-serif; font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#bbb; margin-top:16px; text-align:center; }
 
   .petal { position:fixed; top:-20px; font-size:14px; opacity:0; animation:fall linear infinite; pointer-events:none; z-index:0; }
@@ -559,7 +556,7 @@
     </div>
       <div class="gold-divider"></div>
       <div class="footer-text" id="footerQuote" style="text-align:center">"United in love, walking towards forever."</div>
-      <div class="footer-names" id="footerNames"><span class="fn-name">Aboud</span><span class="fn-heart">♥</span><span class="fn-name">Maram</span></div>
+      <div class="footer-names" id="footerNames">Aboud ♥ Maram</div>
       <div class="footer-bottom" id="footerBottom">August 24th · Spencer's · Burlington, Ontario</div>
     </div>
 
@@ -625,7 +622,7 @@ const T = {
     'inp-fname': 'Your name', 'inp-lname': 'Family name',
     'inp-msg': 'Share your warmest wishes…',
     footerQuote: '"United in love, walking towards forever."',
-    footerNames: '<span class="fn-name">Aboud</span><span class="fn-heart">♥</span><span class="fn-name">Maram</span>',
+    footerNames: 'Aboud ♥ Maram',
     footerBottom: "August 24th · Spencer's · Burlington, Ontario",
     successYes: (n) => `Thank you, ${n}! We can't wait to celebrate with you. ✦`,
     successNo: (n) => `We'll miss you, ${n}. Thank you for letting us know.`,
@@ -663,7 +660,7 @@ const T = {
     'inp-fname': 'اسمك', 'inp-lname': 'اسم العائلة',
     'inp-msg': 'شاركونا أجمل تهانيكم…',
     footerQuote: '"متحدان بالحب، نسير نحو الأبد."',
-    footerNames: '<span class="fn-name">عبود</span><span class="fn-heart">♥</span><span class="fn-name">مرام</span>',
+    footerNames: 'عبود ♥ مرام',
     footerBottom: '٢٤ أغسطس · سبنسرز · بورلينغتون، أونتاريو',
     successYes: (n) => `شكراً لك، ${n}! لا يسعنا الانتظار للاحتفال معكم ✦`,
     successNo: (n) => `سنفتقدك، ${n}. شكراً لإعلامنا.`,
