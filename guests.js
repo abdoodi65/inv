@@ -374,7 +374,7 @@ const GUESTS = {
     ]
   },
   "suham": {
-    name: "Suham Al Shaikhly", lang: "en",
+    name: "Suham Al Shaikhly", lang: "ar",
     options: [
       { value: "Suham Al Shaikhly (1)", label: "Just me" }
     ]
