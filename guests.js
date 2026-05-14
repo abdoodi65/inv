@@ -150,17 +150,17 @@ const GUESTS = {
     ]
   },
   "marwa-ammar": {
-    name: "Ammar & Marwa & Anmar & Tina", lang: "en",
+    name: "Ammar & Marwa & Anmar & Teena", lang: "en",
     options: [
-      { value: "Ammar, Marwa, Anmar & Tina (4)", label: "All four of us" },
-      { value: "Marwa, Anmar & Tina (3)", label: "Without Ammar" },
-      { value: "Ammar, Anmar & Tina (3)", label: "Without Marwa" },
-      { value: "Ammar, Marwa & Tina (3)", label: "Without Anmar" },
-      { value: "Ammar, Marwa & Anmar (3)", label: "Without Tina" },
+      { value: "Ammar, Marwa, Anmar & Teena (4)", label: "All four of us" },
+      { value: "Marwa, Anmar & Teena (3)", label: "Without Ammar" },
+      { value: "Ammar, Anmar & Teena (3)", label: "Without Marwa" },
+      { value: "Ammar, Marwa & Teena (3)", label: "Without Anmar" },
+      { value: "Ammar, Marwa & Anmar (3)", label: "Without Teena" },
       { value: "Ammar only (1)", label: "Ammar only" },
       { value: "Marwa only (1)", label: "Marwa only" },
       { value: "Anmar only (1)", label: "Anmar only" },
-      { value: "Tina only (1)", label: "Tina only" }
+      { value: "Teena only (1)", label: "Teena only" }
     ]
   },
   "saif-zainab": {
