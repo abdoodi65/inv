@@ -297,7 +297,7 @@ const GUESTS = {
     ]
   },
   "mustafa": {
-    name: "Mustafa & Nadine", lang: "en",
+    name: "Mustafa & Nadine", lang: "ar",
     options: [
       { value: "Mustafa & Nadine (2)", label: "Both of us" },
       { value: "Mustafa only (1)", label: "Mustafa only" },
