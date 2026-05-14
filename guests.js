@@ -138,9 +138,9 @@ const GUESTS = {
     ]
   },
   "tutu": {
-    name: "Shoula Alhalafi", lang: "ar",
+    name: "Shoulla Al Halaafi", lang: "ar",
     options: [
-      { value: "Shoula Alhalafi (1)", label: "Just me" }
+      { value: "Shoulla Al Halaafi (1)", label: "Just me" }
     ]
   },
   "abdullah": {
@@ -324,6 +324,20 @@ const GUESTS = {
     name: "Sara Alshukur", lang: "en",
     options: [
       { value: "Sara Alshukur (1)", label: "Just me" }
+    ]
+  },
+  "lejla": {
+    name: "Lejla Rahe", lang: "en",
+    options: [
+      { value: "Lejla Rahe (1)", label: "Just me" }
+    ]
+  },
+  "omar-slavice": {
+    name: "Omar & Slavice", lang: "en",
+    options: [
+      { value: "Omar & Slavice (2)", label: "Both of us" },
+      { value: "Omar only (1)", label: "Omar only" },
+      { value: "Slavice only (1)", label: "Slavice only" }
     ]
   },
   "nabil": {
