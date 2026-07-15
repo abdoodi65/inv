@@ -418,7 +418,7 @@ const GUESTS = {
     ]
   },
   "maeen": {
-    name: "Maeen Bolous & Silva Afram", lang: "en",
+    name: "Maeen Bolous & Silva Afram", lang: "ar",
     options: [
       { value: "Maeen Bolous & Silva Afram (2)", label: "Both of us" },
       { value: "Maeen Bolous only (1)", label: "Maeen Bolous only" },
