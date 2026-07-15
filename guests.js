@@ -410,9 +410,9 @@ const GUESTS = {
     ]
   },
   "ban": {
-    name: "Ban & Ria Saridar", lang: "en",
+    name: "Ban Baraya & Ria Saridar", lang: "en",
     options: [
-      { value: "Ban & Ria Saridar (2)", label: "Both of us" },
+      { value: "Ban Baraya & Ria Saridar (2)", label: "Both of us" },
       { value: "Ban only (1)", label: "Ban only" },
       { value: "Ria only (1)", label: "Ria only" }
     ]
