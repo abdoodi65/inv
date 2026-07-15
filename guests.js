@@ -384,5 +384,45 @@ const GUESTS = {
     options: [
       { value: "Yassir Alkhayat (1)", label: "Just me" }
     ]
+  },
+  "sulekh": {
+    name: "Sulekh & Alysha Khindria", lang: "en",
+    options: [
+      { value: "Sulekh & Alysha Khindria (2)", label: "Both of us" },
+      { value: "Sulekh only (1)", label: "Sulekh only" },
+      { value: "Alysha only (1)", label: "Alysha only" }
+    ]
+  },
+  "joshua": {
+    name: "Joshua & Maddie Khindria", lang: "en",
+    options: [
+      { value: "Joshua & Maddie Khindria (2)", label: "Both of us" },
+      { value: "Joshua only (1)", label: "Joshua only" },
+      { value: "Maddie only (1)", label: "Maddie only" }
+    ]
+  },
+  "ahmed": {
+    name: "Ahmed & Esraa", lang: "en",
+    options: [
+      { value: "Ahmed & Esraa (2)", label: "Both of us" },
+      { value: "Ahmed only (1)", label: "Ahmed only" },
+      { value: "Esraa only (1)", label: "Esraa only" }
+    ]
+  },
+  "ban": {
+    name: "Ban & Ria Saridar", lang: "en",
+    options: [
+      { value: "Ban & Ria Saridar (2)", label: "Both of us" },
+      { value: "Ban only (1)", label: "Ban only" },
+      { value: "Ria only (1)", label: "Ria only" }
+    ]
+  },
+  "maeen": {
+    name: "Maeen Bolous & Silva Afram", lang: "en",
+    options: [
+      { value: "Maeen Bolous & Silva Afram (2)", label: "Both of us" },
+      { value: "Maeen Bolous only (1)", label: "Maeen Bolous only" },
+      { value: "Silva Afram only (1)", label: "Silva Afram only" }
+    ]
   }
 };
