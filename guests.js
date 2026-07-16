@@ -424,5 +424,17 @@ const GUESTS = {
       { value: "Maeen Bolous only (1)", label: "Maeen Bolous only" },
       { value: "Silva Afram only (1)", label: "Silva Afram only" }
     ]
+  },
+  "nada-alqudsi": {
+    name: "Nada Alqudsi", lang: "ar",
+    options: [
+      { value: "Nada Alqudsi (1)", label: "Just me" }
+    ]
+  },
+  "yusur": {
+    name: "Yusur Alaloosi", lang: "en",
+    options: [
+      { value: "Yusur Alaloosi (1)", label: "Just me" }
+    ]
   }
 };
