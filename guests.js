@@ -261,7 +261,7 @@ const GUESTS = {
     ]
   },
   "haydar": {
-    name: "Haydar", lang: "ar",
+    name: "Haider Bahjat", lang: "ar",
     options: [
       { value: "Haydar (1)", label: "Just me" }
     ]
