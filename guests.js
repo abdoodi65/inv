@@ -436,5 +436,13 @@ const GUESTS = {
     options: [
       { value: "Yusur Alaloosi (1)", label: "Just me" }
     ]
+  },
+  "nasir": {
+    name: "Nasir & Dalya", lang: "en",
+    options: [
+      { value: "Nasir & Dalya (2)", label: "Both of us" },
+      { value: "Nasir only (1)", label: "Nasir only" },
+      { value: "Dalya only (1)", label: "Dalya only" }
+    ]
   }
 };
